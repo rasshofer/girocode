@@ -70,6 +70,20 @@ EUR1.23
 "
 `;
 
+exports[`giroCode supports empty amounts 1`] = `
+"BCD
+002
+1
+SCT
+BFSWDE33BER
+Wikimedia
+DE33100205000001194700
+EUR0.00
+
+
+"
+`;
+
 exports[`giroCode works with sane values 1`] = `
 "BCD
 002

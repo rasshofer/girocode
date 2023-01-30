@@ -21,15 +21,9 @@ const giroCode = (props: GiroCodeProps): string | undefined => {
     version: '002',
     encoding: GiroCodeEncoding.UTF8,
     transfer: GiroCodeIdentification.SCT,
-    bic: '',
     name: '',
     iban: '',
     currency: 'EUR',
-    amount: 0,
-    code: '',
-    ref: '',
-    purpose: '',
-    hint: '',
   };
   const result: GiroCodeProps = {
     ...defaults,

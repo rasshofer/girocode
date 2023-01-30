@@ -69,6 +69,15 @@ describe('giroCode', () => {
     expect(result).toMatchSnapshot();
   });
 
+  it('supports empty amounts', () => {
+    const result = giroCode({
+      name: 'Wikimedia',
+      iban: 'DE33 1002 0500 0001 1947 00',
+      bic: 'BFSWDE33BER',
+    });
+    expect(result).toMatchSnapshot();
+  });
+
   it('detects and rejects invalid IBANs', () => {
     const result = giroCode({
       name: 'Wikimedia',
