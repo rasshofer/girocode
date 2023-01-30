@@ -1,0 +1,12 @@
+node_modules
+coverage
+.prettierrc
+.nvmrc
+.github
+src
+jest.config.js
+.eslintignore
+.eslintrc.yaml
+tsconfig.json
+*.test.js
+*.test.d.ts

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`giroCode normalizes formatted IBANs 1`] = `
+"BCD
+002
+1
+SCT
+BFSWDE33BER
+Wikimedia
+DE33100205000001194700
+EUR1.23
+
+
+"
+`;
+
+exports[`giroCode normalizes text values (names, currencies, amounts, codes, references, purposes) 1`] = `
+"BCD
+002
+1
+SCT
+BFSWDE33BER
+A very very very very very very very very very very very very very ver
+DE33100205000001194700
+EUR1.23
+ABCD
+A very very very very ver
+A very very very very very very very very very very very very very very very very very very very very very very very very very very very ver"
+`;
+
+exports[`giroCode supports custom currencies 1`] = `
+"BCD
+002
+1
+SCT
+BFSWDE33BER
+Wikimedia
+DE33100205000001194700
+USD4.56
+
+
+"
+`;
+
+exports[`giroCode supports custom encoding 1`] = `
+"BCD
+002
+2
+SCT
+BFSWDE33BER
+Wikimedia
+DE33100205000001194700
+EUR1.23
+
+
+"
+`;
+
+exports[`giroCode supports custom versions 1`] = `
+"BCD
+001
+1
+SCT
+BFSWDE33BER
+Wikimedia
+DE33100205000001194700
+EUR1.23
+
+
+"
+`;
+
+exports[`giroCode works with sane values 1`] = `
+"BCD
+002
+1
+SCT
+BFSWDE33BER
+Wikimedia
+DE33100205000001194700
+EUR1.23
+
+
+"
+`;
